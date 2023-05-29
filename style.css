@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+/* Expense Form Styles */
+.expense-form {
+  background-color: #222;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+}
+
+.form-group select {
+  appearance: none;
+  background: transparent url('arrow.svg') no-repeat right center;
+  background-size: 12px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Expense List Styles */
+.expense-list {
+  background-color: #222;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.expense-list li {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Chart Styles */
+.chart-section {
+  background-color: #222;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Colors */
+.chart-colors {
+  --color-food: #ff6b6b;
+  --color-transportation: #ffb700;
+  --color-housing: #4ecdc4;
+  --color-utilities: #167c80;
+  --color-entertainment: #5f27cd;
+  --color-other: #999999;
+}
+
+.chart-colors li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.chart-colors li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+  }
+}
